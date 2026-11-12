@@ -1,1 +1,0 @@
-# LLM2026_27-Activitat5

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacte i canvi de contrasenya | Rutes de senderisme per Catalunya</title>
+  <meta name="description" content="Formulari per canviar la contrasenya amb comprovació de coincidència i longitud mínima.">
+  <meta name="author" content="Aymane Alami Ben Aissa">
+  <meta name="keywords" content="contrasenya, formulari, contacte, senderisme">
+  <link rel="stylesheet" href="css/estils.css">
+
+  <!-- Exercici 4: validació de contrasenya, codi dins del HEAD -->
+  <script>
+    function comprovarContrasenya() {
+      var pass1 = document.getElementById("pass1").value;
+      var pass2 = document.getElementById("pass2").value;
+
+      if (pass1 !== pass2) {
+        alert("Error: les dues contrasenyes no coincideixen.");
+      } else if (pass1.length < 8) {
+        alert("Error: la contrasenya ha de tenir un mínim de 8 caràcters.");
+      } else {
+        alert("S'ha canviat correctament la contrasenya");
+      }
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="capcalera">
+      <h1>Rutes de senderisme per Catalunya</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inici</a></li>
+        <li><a href="rutes.html">Rutes</a></li>
+        <li><a class="actiu" href="contacte.html">Contacte</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Canvia la teva contrasenya</h2>
+    <p>Escriu la nova contrasenya dues vegades. Ha de tenir almenys 8 caràcters.</p>
+
+    <form onsubmit="return false;">
+      <label for="pass1">Nova contrasenya</label>
+      <input type="password" id="pass1" name="pass1">
+
+      <label for="pass2">Repeteix la contrasenya</label>
+      <input type="password" id="pass2" name="pass2">
+
+      <button type="button" onclick="comprovarContrasenya()">Canvia la contrasenya</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>Pàgina creada per Aymane Alami Ben Aissa · Activitat 5</p>
+  </footer>
+</body>
+</html>

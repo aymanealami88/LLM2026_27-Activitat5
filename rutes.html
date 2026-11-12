@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rutes destacades | Rutes de senderisme per Catalunya</title>
+  <meta name="description" content="Galeria de sis rutes destacades de Catalunya. Clica una imatge per veure-la en gran.">
+  <meta name="author" content="Aymane Alami Ben Aissa">
+  <meta name="keywords" content="rutes, galeria, Montserrat, Delta de l'Ebre, Pirineus, Costa Brava">
+  <link rel="stylesheet" href="css/estils.css">
+  <script src="components/galeria.js"></script>
+</head>
+<body>
+  <header>
+    <div class="capcalera">
+      <h1>Rutes de senderisme per Catalunya</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inici</a></li>
+        <li><a class="actiu" href="rutes.html">Rutes</a></li>
+        <li><a href="contacte.html">Contacte</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Sis rutes per descobrir</h2>
+    <p>Clica una de les miniatures i la veuràs en mida gran a sota.</p>
+
+    <div class="galeria-miniatures">
+      <img src="img/mini1.png" data-gran="img/gran1.png" alt="Montserrat" onclick="mostrarImatge(this)">
+      <img src="img/mini2.png" data-gran="img/gran2.png" alt="Delta de l'Ebre" onclick="mostrarImatge(this)">
+      <img src="img/mini3.png" data-gran="img/gran3.png" alt="Ports de Tortosa-Beseit" onclick="mostrarImatge(this)">
+      <img src="img/mini4.png" data-gran="img/gran4.png" alt="Pirineus" onclick="mostrarImatge(this)">
+      <img src="img/mini5.png" data-gran="img/gran5.png" alt="Costa Brava" onclick="mostrarImatge(this)">
+      <img src="img/mini6.png" data-gran="img/gran6.png" alt="Cap de Creus" onclick="mostrarImatge(this)">
+    </div>
+
+    <figure class="visor">
+      <img id="imatge-gran" src="img/gran1.png" alt="Montserrat">
+      <figcaption id="peu-imatge">Montserrat</figcaption>
+    </figure>
+  </main>
+
+  <footer>
+    <p>Pàgina creada per Aymane Alami Ben Aissa · Activitat 5</p>
+  </footer>
+</body>
+</html>

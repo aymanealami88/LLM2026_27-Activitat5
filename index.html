@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inici | Rutes de senderisme per Catalunya</title>
+  <meta name="description" content="Guia de rutes de senderisme per Catalunya: muntanya, delta i costa, amb consells per preparar la sortida.">
+  <meta name="author" content="Aymane Alami Ben Aissa">
+  <meta name="keywords" content="senderisme, Catalunya, rutes, muntanya, excursions">
+  <link rel="stylesheet" href="css/estils.css">
+
+  <!-- Exercici 2: codi JavaScript dins del HEAD -->
+  <script>
+    function realcar(seccio) {
+      seccio.classList.add("destacada");
+      seccio.querySelector(".amagat").style.display = "block";
+    }
+
+    function normalitzar(seccio) {
+      seccio.classList.remove("destacada");
+      seccio.querySelector(".amagat").style.display = "none";
+    }
+  </script>
+  <script src="components/rellotge.js"></script>
+</head>
+<body>
+  <header>
+    <div class="capcalera">
+      <h1>Rutes de senderisme per Catalunya</h1>
+      <div id="rellotge">Temps a la pàgina: 00:00:00</div>
+    </div>
+    <nav>
+      <ul>
+        <li><a class="actiu" href="index.html">Inici</a></li>
+        <li><a href="rutes.html">Rutes</a></li>
+        <li><a href="contacte.html">Contacte</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Abans de sortir al camí</h2>
+    <p>Passa el ratolí per sobre de cada bloc per veure'n el detall.</p>
+
+    <section class="seccio" onmouseover="realcar(this)" onmouseout="normalitzar(this)">
+      <h3>Planifica la ruta</h3>
+      <p class="amagat">Consulta el desnivell, la durada i la dificultat. Calcula sempre el temps de tornada abans que es faci fosc.</p>
+    </section>
+
+    <section class="seccio" onmouseover="realcar(this)" onmouseout="normalitzar(this)">
+      <h3>Porta l'equip adequat</h3>
+      <p class="amagat">Calçat de muntanya, aigua suficient, aliment, protecció solar i una jaqueta per al canvi de temps.</p>
+    </section>
+
+    <section class="seccio" onmouseover="realcar(this)" onmouseout="normalitzar(this)">
+      <h3>Respecta l'entorn</h3>
+      <p class="amagat">Segueix els camins marcats, no deixis residus i evita de molestar la fauna i la flora.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Pàgina creada per Aymane Alami Ben Aissa · Activitat 5</p>
+  </footer>
+
+  <!-- Exercici 3: codi JavaScript dins del BODY (crida al rellotge) -->
+  <script>
+    iniciarRellotge("rellotge");
+  </script>
+</body>
+</html>

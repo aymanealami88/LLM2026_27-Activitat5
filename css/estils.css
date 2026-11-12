@@ -128,13 +128,18 @@ footer {
 .galeria-miniatures {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 0.6rem;
-  max-width: 32rem;
+  gap: 1rem;
+  max-width: 36rem;
+}
+
+.galeria-miniatures figure {
+  margin: 0;
 }
 
 .galeria-miniatures img {
   width: 100%;
-  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
   display: block;
   cursor: pointer;
   border: 3px solid transparent;
@@ -143,6 +148,12 @@ footer {
 .galeria-miniatures img:hover,
 .galeria-miniatures img.seleccionada {
   border-color: var(--marca);
+}
+
+.galeria-miniatures figcaption {
+  font-size: 0.85rem;
+  text-align: center;
+  padding-top: 0.3rem;
 }
 
 .visor {
@@ -154,7 +165,8 @@ footer {
 
 .visor img {
   width: 100%;
-  height: auto;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
   display: block;
 }
 

@@ -1,12 +1,4 @@
-/* Estils generals - Rutes de senderisme per Catalunya */
-:root {
-  --pi: #10263a;
-  --pedra: #e8edf2;
-  --paper: #fafbfa;
-  --marca: #d9a520;
-  --text: #1c2624;
-}
-
+/* Estils generals - Guia del token de la tenda pirata */
 * {
   box-sizing: border-box;
 }
@@ -15,14 +7,14 @@ body {
   margin: 0;
   font-family: Georgia, "Times New Roman", serif;
   line-height: 1.6;
-  color: var(--text);
-  background: var(--pedra);
+  color: #1c2624;
+  background: #e8edf2;
 }
 
 header {
-  background: var(--pi);
+  background: #10263a;
   color: #f5f5f0;
-  padding: 1rem 1.5rem 0;
+  padding: 16px 24px 0;
 }
 
 .capcalera {
@@ -30,25 +22,25 @@ header {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 16px;
 }
 
 .capcalera h1 {
   margin: 0;
-  font-size: 1.6rem;
+  font-size: 26px;
   letter-spacing: 0.02em;
 }
 
 #rellotge {
   font-family: "Courier New", monospace;
-  font-size: 1.1rem;
+  font-size: 18px;
   background: #091827;
-  border-left: 6px solid var(--marca);
-  padding: 0.3rem 0.8rem;
+  border-left: 6px solid #d9a520;
+  padding: 5px 13px;
 }
 
 nav {
-  margin-top: 1rem;
+  margin-top: 16px;
 }
 
 nav ul {
@@ -57,12 +49,12 @@ nav ul {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  gap: 0.25rem;
+  gap: 4px;
 }
 
 nav a {
   display: block;
-  padding: 0.6rem 1.2rem;
+  padding: 10px 19px;
   color: #f5f5f0;
   text-decoration: none;
   border-bottom: 4px solid transparent;
@@ -70,7 +62,7 @@ nav a {
 
 nav a:hover,
 nav a:focus {
-  border-bottom-color: var(--marca);
+  border-bottom-color: #d9a520;
   background: #1b3d5c;
 }
 
@@ -80,32 +72,32 @@ nav a.actiu {
 }
 
 main {
-  max-width: 62rem;
+  max-width: 992px;
   margin: 0 auto;
-  padding: 2rem 1.5rem 3rem;
+  padding: 32px 24px 48px;
 }
 
 h2 {
-  color: var(--pi);
-  font-size: 1.7rem;
+  color: #10263a;
+  font-size: 27px;
   margin-top: 0;
 }
 
 footer {
-  background: var(--pi);
+  background: #10263a;
   color: #cdd8e3;
   text-align: center;
-  padding: 1rem;
-  font-size: 0.9rem;
+  padding: 16px;
+  font-size: 14px;
 }
 
 /* Seccions amb efecte hover (exercici 2) */
 .seccio {
-  background: var(--paper);
-  color: var(--text);
-  border-left: 8px solid var(--pi);
-  padding: 1rem 1.4rem;
-  margin-bottom: 1.2rem;
+  background: #fafbfa;
+  color: #1c2624;
+  border-left: 8px solid #10263a;
+  padding: 16px 22px;
+  margin-bottom: 19px;
   cursor: pointer;
 }
 
@@ -115,21 +107,21 @@ footer {
 
 .seccio .amagat {
   display: none;
-  margin: 0.6rem 0 0;
+  margin: 10px 0 0;
 }
 
 .seccio.destacada {
-  background: var(--pi);
+  background: #10263a;
   color: #ffffff;
-  border-left-color: var(--marca);
+  border-left-color: #d9a520;
 }
 
 /* Galeria (exercici 1) */
 .galeria-miniatures {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-  max-width: 36rem;
+  gap: 16px;
+  max-width: 576px;
 }
 
 .galeria-miniatures figure {
@@ -147,20 +139,20 @@ footer {
 
 .galeria-miniatures img:hover,
 .galeria-miniatures img.seleccionada {
-  border-color: var(--marca);
+  border-color: #d9a520;
 }
 
 .galeria-miniatures figcaption {
-  font-size: 0.85rem;
+  font-size: 14px;
   text-align: center;
-  padding-top: 0.3rem;
+  padding-top: 5px;
 }
 
 .visor {
-  margin: 1.5rem 0 0;
-  background: var(--paper);
-  padding: 0.8rem;
-  max-width: 56rem;
+  margin: 24px 0 0;
+  background: #fafbfa;
+  padding: 13px;
+  max-width: 896px;
 }
 
 .visor img {
@@ -171,42 +163,42 @@ footer {
 }
 
 .visor figcaption {
-  padding-top: 0.5rem;
+  padding-top: 8px;
   font-style: italic;
 }
 
 /* Formulari (exercici 4) */
 form {
-  background: var(--paper);
-  padding: 1.5rem;
-  max-width: 28rem;
-  border-top: 6px solid var(--pi);
+  background: #fafbfa;
+  padding: 24px;
+  max-width: 448px;
+  border-top: 6px solid #10263a;
 }
 
 label {
   display: block;
-  margin-top: 1rem;
+  margin-top: 16px;
   font-weight: bold;
 }
 
 input[type="password"] {
   width: 100%;
-  padding: 0.6rem;
-  font-size: 1rem;
+  padding: 10px;
+  font-size: 16px;
   border: 2px solid #9aa9a5;
-  margin-top: 0.3rem;
+  margin-top: 5px;
 }
 
 input[type="password"]:focus {
-  outline: 3px solid var(--marca);
-  border-color: var(--pi);
+  outline: 3px solid #d9a520;
+  border-color: #10263a;
 }
 
 button {
-  margin-top: 1.4rem;
-  padding: 0.7rem 1.6rem;
-  font-size: 1rem;
-  background: var(--marca);
+  margin-top: 22px;
+  padding: 11px 26px;
+  font-size: 16px;
+  background: #d9a520;
   color: #10263a;
   font-weight: bold;
   border: none;

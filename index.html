@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Què és el token de la botiga pirata de Fortnite | Inici</title>
+  <meta name="description" content="Guia en català sobre el token de la botiga pirata de Fortnite: què és, com s'aconsegueix i què dóna.">
+  <meta name="author" content="Aymane Alami Ben Aissa">
+  <meta name="keywords" content="Fortnite, token, botiga pirata, Pirate Shop, Treasure Hunters, One Piece">
+  <link rel="stylesheet" href="css/estils.css">
+
+  <!-- Exercici 2: codi JavaScript dins del HEAD -->
+  <script>
+    function realcar(seccio) {
+      seccio.classList.add("destacada");
+      seccio.querySelector(".amagat").style.display = "block";
+    }
+
+    function normalitzar(seccio) {
+      seccio.classList.remove("destacada");
+      seccio.querySelector(".amagat").style.display = "none";
+    }
+  </script>
+  <script src="components/rellotge.js"></script>
+</head>
+<body>
+  <header>
+    <div class="capcalera">
+      <h1>El token de la botiga pirata de Fortnite</h1>
+      <div id="rellotge">Temps a la pàgina: 00:00:00</div>
+    </div>
+    <nav>
+      <ul>
+        <li><a class="actiu" href="index.html">Inici</a></li>
+        <li><a  href="galeria.html">Galeria</a></li>
+        <li><a  href="contacte.html">Compte</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Tot sobre el Pirate Shop Token</h2>
+    <p>Passa el ratolí per sobre de cada bloc per veure'n el detall.</p>
+
+    <section class="seccio" onmouseover="realcar(this)" onmouseout="normalitzar(this)">
+      <h3>Què és?</h3>
+      <p class="amagat">És un objecte molt rar del mini-temporada Treasure Hunters de Fortnite, enllaçat amb la col·laboració amb One Piece. Permet obtenir gratis cosmètics de la botiga d'objectes.</p>
+    </section>
+
+    <section class="seccio" onmouseover="realcar(this)" onmouseout="normalitzar(this)">
+      <h3>Com s'aconsegueix?</h3>
+      <p class="amagat">Només es pot trobar obrint cofres a Battle Royale, com a premi aleatori. Si algú de l'escamot el troba, tots els jugadors de la partida el reben.</p>
+    </section>
+
+    <section class="seccio" onmouseover="realcar(this)" onmouseout="normalitzar(this)">
+      <h3>Quant de rar és?</h3>
+      <p class="amagat">Molt. Les estimacions de la comunitat varien molt, des d'un cop cada 2.000 cofres fins a un cop cada 700.000, i no es pot millorar la sort en cada cofre.</p>
+    </section>
+
+    <section class="seccio" onmouseover="realcar(this)" onmouseout="normalitzar(this)">
+      <h3>Compte amb les estafes</h3>
+      <p class="amagat">Epic Games ha avisat que els comptes amb token que es venen per internet són estafes. Mai no compartis la teva contrasenya.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Web de fans creat per Aymane Alami Ben Aissa · Activitat 5 · No oficial, sense relació amb Epic Games</p>
+  </footer>
+
+  <!-- Exercici 3: codi JavaScript dins del BODY -->
+  <script>
+    iniciarRellotge("rellotge");
+  </script>
+</body>
+</html>

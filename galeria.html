@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Galeria del token pirata de Fortnite | Galeria</title>
+  <meta name="description" content="Galeria de sis imatges sobre el token de la botiga pirata de Fortnite. Clica una miniatura per veure-la en gran.">
+  <meta name="author" content="Aymane Alami Ben Aissa">
+  <meta name="keywords" content="Fortnite, galeria, token, cofre, botiga pirata">
+  <link rel="stylesheet" href="css/estils.css">
+  <script src="components/galeria.js"></script>
+</head>
+<body>
+  <header>
+    <div class="capcalera">
+      <h1>El token de la botiga pirata de Fortnite</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a  href="index.html">Inici</a></li>
+        <li><a class="actiu" href="galeria.html">Galeria</a></li>
+        <li><a  href="contacte.html">Compte</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Galeria</h2>
+    <p>Clica una de les miniatures i la veuràs en mida gran a sota.</p>
+
+    <div class="galeria-miniatures">
+      <figure>
+        <img src="img/mini1.png" data-gran="img/gran1.png" alt="Cofre suprem" onclick="mostrarImatge(this)">
+        <figcaption>Cofre suprem</figcaption>
+      </figure>
+      <figure>
+        <img src="img/mini2.png" data-gran="img/gran2.png" alt="El token" onclick="mostrarImatge(this)">
+        <figcaption>El token</figcaption>
+      </figure>
+      <figure>
+        <img src="img/mini3.png" data-gran="img/gran3.png" alt="Botiga pirata" onclick="mostrarImatge(this)">
+        <figcaption>Botiga pirata</figcaption>
+      </figure>
+      <figure>
+        <img src="img/mini4.png" data-gran="img/gran4.png" alt="Escamot" onclick="mostrarImatge(this)">
+        <figcaption>Escamot</figcaption>
+      </figure>
+      <figure>
+        <img src="img/mini5.png" data-gran="img/gran5.png" alt="Període de 14 dies" onclick="mostrarImatge(this)">
+        <figcaption>Període de 14 dies</figcaption>
+      </figure>
+      <figure>
+        <img src="img/mini6.png" data-gran="img/gran6.png" alt="Compte segur" onclick="mostrarImatge(this)">
+        <figcaption>Compte segur</figcaption>
+      </figure>
+    </div>
+
+    <figure class="visor">
+      <img id="imatge-gran" src="img/gran1.png" alt="Cofre suprem">
+      <figcaption id="peu-imatge">Cofre suprem</figcaption>
+    </figure>
+  </main>
+
+  <footer>
+    <p>Web de fans creat per Aymane Alami Ben Aissa · Activitat 5 · No oficial, sense relació amb Epic Games</p>
+  </footer>
+</body>
+</html>

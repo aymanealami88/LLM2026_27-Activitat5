@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Protegeix el teu compte de Fortnite | Compte</title>
+  <meta name="description" content="Formulari per canviar la contrasenya amb comprovació de coincidència i longitud mínima, per protegir el compte davant d'estafes.">
+  <meta name="author" content="Aymane Alami Ben Aissa">
+  <meta name="keywords" content="Fortnite, contrasenya, compte segur, estafes, token">
+  <link rel="stylesheet" href="css/estils.css">
+
+  <!-- Exercici 4: validació de contrasenya, codi dins del HEAD -->
+  <script>
+    function comprovarContrasenya() {
+      var pass1 = document.getElementById("pass1").value;
+      var pass2 = document.getElementById("pass2").value;
+
+      if (pass1 !== pass2) {
+        alert("Error: les dues contrasenyes no coincideixen.");
+      } else if (pass1.length < 8) {
+        alert("Error: la contrasenya ha de tenir un mínim de 8 caràcters.");
+      } else {
+        alert("S'ha canviat correctament la contrasenya");
+      }
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="capcalera">
+      <h1>El token de la botiga pirata de Fortnite</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a  href="index.html">Inici</a></li>
+        <li><a  href="galeria.html">Galeria</a></li>
+        <li><a class="actiu" href="contacte.html">Compte</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Protegeix el teu compte</h2>
+    <p>Amb tanta febre pel token, abunden les estafes. Posa una contrasenya nova d'almenys 8 caràcters i escriu-la dues vegades.</p>
+
+    <form onsubmit="return false;">
+      <label for="pass1">Nova contrasenya</label>
+      <input type="password" id="pass1" name="pass1">
+
+      <label for="pass2">Repeteix la contrasenya</label>
+      <input type="password" id="pass2" name="pass2">
+
+      <button type="button" onclick="comprovarContrasenya()">Canvia la contrasenya</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>Web de fans creat per Aymane Alami Ben Aissa · Activitat 5 · No oficial, sense relació amb Epic Games</p>
+  </footer>
+</body>
+</html>
